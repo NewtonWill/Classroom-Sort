@@ -1,0 +1,97 @@
+Last Name,First Name,Ethnicity,Dyslexia,Reading Level,Special Ed,ESL Level,Behavior Grade
+Smith,John,White,No,High,No,None,E
+Johnson,Emily,White,No,Medium,No,None,E
+Williams,Michael,White,No,Low,Yes,Intermediate,S
+Brown,Emma,African American,No,High,No,None,E
+Jones,Matthew,African American,No,Medium,No,Advanced,S
+Garcia,Sophia,Hispanic,No,Low,Yes,Advanced,S
+Miller,Olivia,Hispanic,No,High,No,None,E
+Davis,Noah,Hispanic,No,Medium,No,None,E
+Rodriguez,Isabella,Hispanic,No,GT,Yes,Advanced,S
+Martinez,Ethan,Hispanic,No,High,No,None,E
+Hernandez,Emma,American Indian,No,Medium,Yes,Advanced,U
+Lopez,Aiden,American Indian,No,Low,No,None,E
+Gonzalez,Liam,American Indian,No,High,Yes,Advanced,S
+Wilson,Mia,American Indian,No,Medium,No,None,E
+Taylor,Mason,Asian,No,Low,No,None,E
+Anderson,Ava,Asian,No,GT,No,None,E
+Thomas,Elijah,Asian,No,GT,No,None,E
+Jackson,Sofia,Asian,No,Low,No,None,E
+White,James,White,No,High,No,None,E
+Harris,Amelia,White,No,Medium,Yes,Advanced,S
+Martin,Logan,White,No,Low,No,None,U
+Thompson,Charlotte,White,No,High,No,None,E
+Garcia,Benjamin,African American,No,Medium,Yes,Advanced,S
+Martinez,Avery,African American,No,Low,No,None,E
+Robinson,Daniel,African American,No,High,No,None,E
+Clark,Harper,African American,No,Medium,No,None,E
+Rodriguez,Alexander,Hispanic,No,Low,Yes,Advanced,S
+Lewis,Scarlett,Hispanic,No,High,No,None,E
+Lee,David,Hispanic,Yes,Medium,Yes,Intermediate,S
+Walker,Madison,Hispanic,Yes,Low,No,None,E
+Hall,Samuel,American Indian,No,GT,Yes,Advanced,S
+Allen,Luna,American Indian,No,Medium,No,None,E
+Young,Chloe,American Indian,Yes,Low,No,None,E
+Hernandez,Maxwell,American Indian,Yes,High,No,None,E
+King,Grace,Asian,No,Medium,Yes,Advanced,S
+Wright,Gabriel,Asian,No,Low,No,None,E
+Scott,Layla,Asian,Yes,High,No,None,E
+Nguyen,Jack,Asian,Yes,Medium,No,None,E
+Adams,Zoe,White,No,Low,Yes,Intermediate,S
+Baker,Xavier,White,No,High,No,None,E
+Gonzalez,Aaliyah,White,Yes,Medium,No,None,E
+Nelson,Ellie,White,Yes,Low,Yes,Intermediate,S
+Carter,Nicholas,African American,No,High,No,None,E
+Mitchell,Hannah,African American,No,Medium,Yes,Intermediate,S
+Perez,Caleb,African American,Yes,Low,No,None,E
+Roberts,Sarah,African American,Yes,High,No,None,E
+Turner,Arianna,Hispanic,No,Medium,Yes,Advanced,S
+Phillips,Joseph,Hispanic,No,Low,No,None,E
+Campbell,Natalie,Hispanic,No,High,No,None,E
+Parker,Evelyn,Hispanic,No,Medium,Yes,Advanced,S
+Evans,Mateo,American Indian,No,Low,No,None,E
+Edwards,Riley,American Indian,No,High,Yes,Advanced,S
+Collins,Leah,American Indian,No,GT,No,None,E
+Stewart,Peyton,American Indian,No,Low,No,None,E
+Sanchez,Eliana,Asian,No,High,No,None,E
+Morris,Connor,Asian,No,Medium,Yes,Intermediate,S
+Rogers,Maya,Asian,No,Low,Yes,Advanced,S
+Reed,Brayden,Asian,No,High,No,None,E
+Cook,Taylor,White,No,Medium,Yes,Intermediate,S
+Morgan,Isaac,White,No,Low,No,None,E
+Bell,Aria,White,No,High,No,None,E
+Murphy,Cameron,White,No,Medium,Yes,Advanced,S
+Rivera,Mila,African American,No,GT,Yes,Advanced,S
+Cooper,Lillian,African American,No,GT,No,None,E
+Richardson,Kai,African American,No,Medium,Yes,Intermediate,S
+Cox,Landon,African American,No,Low,No,None,E
+Howard,Kylie,Hispanic,No,High,Yes,Advanced,N
+Ward,Alexa,Hispanic,No,Medium,No,None,E
+Torres,Dominic,Hispanic,No,Low,No,None,E
+Peterson,Naomi,Hispanic,No,High,Yes,Advanced,S
+Gray,Julian,American Indian,No,Medium,No,None,E
+Ramirez,Audrey,American Indian,No,Low,Yes,Advanced,S
+James,Adrian,American Indian,No,High,No,None,E
+Watson,Hailey,American Indian,No,GT,No,None,E
+Brooks,Elliot,Asian,No,Low,Yes,Intermediate,S
+Kelly,Brooklyn,Asian,No,High,No,None,E
+Sanders,Reagan,Asian,No,Medium,No,None,E
+Price,Tristan,Asian,No,Low,No,None,E
+Bennett,Mackenzie,White,No,High,No,None,E
+Wood,Angel,White,No,Medium,Yes,Advanced,S
+Barnes,Aaron,White,No,Low,No,None,E
+Ross,Kennedy,White,No,High,No,None,E
+Henderson,Trinity,African American,No,GT,Yes,Advanced,S
+Cole,Blake,African American,No,Low,No,None,E
+Jenkins,Hayden,African American,No,High,Yes,Intermediate,S
+Perry,Audrey,African American,No,Medium,No,None,N
+Powell,Skylar,Hispanic,No,GT,No,None,E
+Long,Carter,Hispanic,No,High,Yes,Advanced,E
+Patterson,Paige,Hispanic,No,Medium,Yes,Advanced,S
+Flores,Derek,Hispanic,No,Low,No,None,E
+Alexander,Lila,American Indian,No,High,No,None,E
+Gomez,Leo,American Indian,No,Medium,Yes,Advanced,S
+Washington,Kayla,American Indian,No,Low,No,None,E
+Hamilton,Jordan,American Indian,No,High,Yes,Intermediate,S
+Kim,Hannah,Asian,No,Medium,Yes,Advanced,N
+Gutierrez,Owen,Asian,No,Low,No,None,E
