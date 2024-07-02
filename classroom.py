@@ -1,7 +1,7 @@
 class Classroom:
     def __init__(self, id, students):
         self.id = id
-        self.students = list()
+        self.students = list() #contains student ID integers
 
     def __str__(self):
         return "Classroom #%s" % (self.id)

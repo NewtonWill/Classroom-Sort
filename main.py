@@ -25,7 +25,16 @@ def disallowPairing(studentID1, studentID2):
     Student.addBadPair(studentTable.search(studentID1), studentID2)
     Student.addBadPair(studentTable.search(studentID2), studentID1)
 
+def addStudentToClass(classroomID, studentID):
+    classTable.search(classroomID).students.append(studentID)
 
+def checkForPairing(studentID1, studentID2):
+    if studentID2 in studentTable.search(studentID1).dPairs:
+        print('bad pairing detected')
+        return False
+    else:
+        print('no bad pairing detected')
+        return True
 def loadStudentData():
     #Function used to load students from csv into memory
     with open('students.csv') as studentList:
@@ -69,8 +78,10 @@ loadStudentData()
 loadClassrooms()
 
 
-classTable.search(0).students.append(80)
-print(classTable.search(0).students)
+
+
+# addStudentToClass(0, 80)
+# print(classTable.search(0).students)
 
 
 
@@ -81,8 +92,14 @@ print(classTable.search(0).students)
 # print(studentTable.search(96))
 
 
-# disallowPairing(94, 95)
-#
+disallowPairing(94, 95)
+
+checkForPairing(94, 95)
+checkForPairing(91, 95)
+
+
+
+
 # print("student 94 bad pairs: ")
 # Student.printDPairs(studentTable.search(94), studentTable)
 #
