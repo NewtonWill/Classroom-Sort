@@ -14,3 +14,9 @@ class Classroom:
 
     def removeStudent(self, student):
         self.students.remove(student)
+
+    def printAllStudents(self):
+        print("Students in Classroom #%s: " % (self.id))
+        for student in self.students:
+            print(student)
+

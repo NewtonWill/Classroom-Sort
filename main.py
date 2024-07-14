@@ -9,8 +9,8 @@ def getNumClassrooms() -> int:
         try:
             user_input = input("Please enter the number of classrooms: ")
             input_value = int(user_input)
-            if input_value <= 0:
-                raise ValueError("The number must be greater than 0")
+            if input_value <= 2:
+                raise ValueError("The number must be greater than 2")
             return input_value
         except ValueError as e:
             print(f"Invalid input: {e}. Please try again.")
@@ -26,14 +26,18 @@ def disallowPairing(studentID1, studentID2):
     Student.addBadPair(studentTable.search(studentID2), studentID1)
 
 def addStudentToClass(classroomID, studentID):
-    classTable.search(classroomID).students.append(studentID)
+    #classTable.search(classroomID).students.append(studentID)
+    Classroom.addStudent(classTable.search(classroomID), studentID)
 
-def checkForPairing(studentID1, studentID2):
+def removeStudentFromClass(classroomID, studentID):
+    Classroom.removeStudent(classTable.search(classroomID), studentID)
+
+def goodStudentPairing(studentID1, studentID2):
     if studentID2 in studentTable.search(studentID1).dPairs:
-        print('bad pairing detected')
+        #print('bad pairing detected')
         return False
     else:
-        print('no bad pairing detected')
+        #print('no bad pairing detected')
         return True
 def loadStudentData():
     #Function used to load students from csv into memory
@@ -59,43 +63,80 @@ def loadStudentData():
             # insert it into the hash table
             studentTable.insert(sID, s)
             studentID = studentID + 1
+        return studentID
 
 
-def loadClassrooms():
+def loadClassrooms(nClassrooms):
     classID = 0
-    for i in range(numClassrooms):
+    for i in range(nClassrooms):
         print('Classroom ' + str(i) + ' loaded')
         cID = int(classID)
         c = Classroom(i, None)
         classTable.insert(cID, c)
         classID += 1
 
+def sortAlg(nClassrooms, nStudents):
+    rejected = list()
+    for sID in range(nStudents):
+        if placeToClusters(studentTable.search(sID)) is False:
+            rejected.append(sID)
+
+    for sID in rejected:
+        room_tuples = []
+        for c in range(nClassrooms):
+            length = len(Classroom.getStudents(classTable.search(c)))
+            room_tuples.append((c, length))
+        smallToLarge = sorted(room_tuples, key=lambda room: room[1])
+        if not attemptSortToSmallest(smallToLarge, sID):
+            print("WARNING: Student " + str(studentTable.search(sID)) + " not sorted")
+
+def attemptSortToSmallest(sortedClassTuple, sID):
+    for c in sortedClassTuple:
+        if goodRoomPairing(c[0], sID):
+            addStudentToClass(c[0], sID)
+            return True
+    return False
+
+def placeToClusters(s):
+    if s.rLevel == 'GT':
+        if goodRoomPairing(0, s.id):
+            addStudentToClass(0, s.id)
+            return True
+    elif s.dyslexia == 'Yes':
+        if goodRoomPairing(1, s.id):
+            addStudentToClass(1, s.id)
+            return True
+    elif s.sped == 'Yes':
+        if goodRoomPairing(2, s.id):
+            addStudentToClass(2, s.id)
+            return True
+    return False
+
+def goodRoomPairing(roomID, studentID):
+    for i in classTable.search(roomID).students:
+        if not goodStudentPairing(i, studentID):
+            return False
+    return True
+
+
 
 studentTable = hashTable.ChainingHashTable(1)
 classTable = hashTable.ChainingHashTable(1)
-numClassrooms = getNumClassrooms()
-loadStudentData()
-loadClassrooms()
 
+numClassrooms = getNumClassrooms()
+numStudents = loadStudentData()
+loadClassrooms(numClassrooms)
+
+sortAlg(numClassrooms, numStudents)
+
+
+for classroom in range(numClassrooms):
+    Classroom.printAllStudents(classTable.search(classroom))
 
 
 
 # addStudentToClass(0, 80)
 # print(classTable.search(0).students)
-
-
-
-
-
-# print(studentTable.search(94))
-# print(studentTable.search(95))
-# print(studentTable.search(96))
-
-
-disallowPairing(94, 95)
-
-checkForPairing(94, 95)
-checkForPairing(91, 95)
 
 
 
