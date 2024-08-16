@@ -33,6 +33,11 @@ large number of students into classroom sets.</p>
 
 ## Future Features
 
+* Web UI and site hosting
+* Enhanced classroom balancing algorithm
+* Support for more special group considerations
+* Class list document export
+
 
 ## Links
 
